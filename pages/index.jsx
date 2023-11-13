@@ -28,7 +28,7 @@ export default function Home() {
     <Layout>
       <div className='flex w-full flex-1 items-center justify-center'>
         <div className='information grid grid-cols-1 p-10 md:grid-cols-2 md:gap-20 md:p-20 lg:gap-60'>
-          <div className='col-span-1'>
+          <div className='col-span-1 md:pl-40'>
             <div className='whitespace-nowrap text-xs md:text-base'>
               <span className='text-white'>{`<`}</span>
               <span className='text-pink-400'>{`welcome-tag` + ' '}</span>
