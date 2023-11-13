@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .tab-selected {
+    @apply text-shadow relative text-white;
+  }
+
+  .tab-selected:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: rgb(0, 140, 255);
+    bottom: 0;
+  }
+}
+
+.header-link {
+  @apply hover:bg-white md:flex hidden hover:text-white cursor-pointer hover:bg-opacity-10 items-center justify-center h-full border-r-[1px] border-r-gray-700;
+}
+
+.footer-link {
+  @apply hover:bg-white hover:text-white hover:bg-opacity-10 grid place-items-center h-full border-r-[1px] border-r-gray-700
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +39,57 @@
   }
 }
 
+* {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Fira Code', monospace;
+  user-select: none;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  color: rgb(195, 193, 193);
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 5s steps(20, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0
+  }
+
+  50% {
+    width: 100%
+  }
+
+  100% {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
 }
