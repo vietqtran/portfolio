@@ -10,11 +10,11 @@ const Layout = ({ children }) => {
     const tab = pathname.replace(/^\//, "");
     return (
         <main
-            className="w-[100vw] h-[100vh] overflow-hidden relative"
+            className="relative h-[100vh] w-[100vw] overflow-hidden"
         >
             <Video src="/StarBackground.mp4" />
-            <div className='w-full h-full p-10'>
-                <div className="flex justify-between flex-col bg-black w-full h-full bg-opacity-30 shadow-lg backdrop-blur-sm rounded-lg border-[1px] border-gray-700">
+            <div className='h-full w-full p-3 sm:p-10'>
+                <div className="flex h-full w-full flex-col justify-between rounded-lg border-[1px] border-gray-700 bg-black bg-opacity-30 shadow-lg backdrop-blur-sm">
                     <Header tab={tab} />
                     {children}
                     <Footer />

@@ -26,10 +26,10 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className='container mx-auto flex w-full flex-1 items-center justify-center'>
+      <div className='flex w-full flex-1 items-center justify-center'>
         <div className='information grid grid-cols-1 p-10 md:grid-cols-2 md:gap-20 md:p-20 lg:gap-60'>
           <div className='col-span-1'>
-            <div className='whitespace-nowrap'>
+            <div className='whitespace-nowrap text-xs md:text-base'>
               <span className='text-white'>{`<`}</span>
               <span className='text-pink-400'>{`welcome-tag` + ' '}</span>
               <span className='text-green-500'>{`className`}</span>
@@ -55,7 +55,7 @@ export default function Home() {
                   </div>
                 })}
               </div>
-              <p id='my-p-element' className='translate-y-[-2px] pl-2 text-sm leading-4 text-gray-300 text-opacity-70'>
+              <p id='my-p-element' className='translate-y-[-2px] pl-2 text-xs leading-4 text-gray-300 text-opacity-70'>
                 On this portfolio page,
                 I would like to introduce to you some
                 of my completed projects as well as
