@@ -10,13 +10,14 @@ export default function Home() {
       const lineHeight = parseInt(getComputedStyle(element).lineHeight);
       const lineNumber = Math.round(height / lineHeight);
       const lineElements = []
-      lineElements.push(<span>{`/**`}</span>)
+      lineElements.push(<span>/**</span>)
       for (let index = 0; index < lineNumber; index++) {
-        lineElements.push(<span>{`*`}</span>)
+        lineElements.push(<span>&nbsp;*</span>)
       }
-      lineElements.push(<span>{`*/`}</span>)
+      lineElements.push(<span>&nbsp;*/</span>)
       setLineItems(lineElements)
     }
+    handleResize()
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -54,7 +55,7 @@ export default function Home() {
                   </div>
                 })}
               </div>
-              <p id='my-p-element' className='translate-y-[-2px] text-sm leading-4 text-gray-300 text-opacity-70'>
+              <p id='my-p-element' className='translate-y-[-2px] pl-2 text-sm leading-4 text-gray-300 text-opacity-70'>
                 On this portfolio page,
                 I would like to introduce to you some
                 of my completed projects as well as
