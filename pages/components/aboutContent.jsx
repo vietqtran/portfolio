@@ -6,7 +6,6 @@ import HardSkill from './fileOpen/HardSkill'
 import Experience from './fileOpen/Experience'
 import SoftSkill from './fileOpen/SoftSkill'
 import StartUp from './fileOpen/StartUp'
-import LazyLoad from 'react-lazyload'
 
 
 const AboutContent = () => {
