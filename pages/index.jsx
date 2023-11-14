@@ -50,7 +50,7 @@ export default function Home() {
             <div className='flex items-center'>
               <p className='pl-2 text-xs text-gray-300 text-opacity-70'>
                 {lineItems.map((i, index) => {
-                  return <span>{i} < br /></span>
+                  return <span key={index}>{i} < br /></span>
                 })}
               </p>
               <p id='my-p-element' className='translate-y-[-1px] pl-2 text-xs text-gray-300 text-opacity-70'>
