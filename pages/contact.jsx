@@ -5,7 +5,6 @@ const contact = () => {
     return (
         <Layout>
             <div>
-
             </div>
         </Layout>
     )

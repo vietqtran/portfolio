@@ -1,5 +1,5 @@
 import Layout from './components/layout'
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [ lineItems, setLineItems ] = useState([])
@@ -28,7 +28,7 @@ export default function Home() {
     <Layout>
       <div className='flex w-full flex-1 items-center justify-center'>
         <div className='information grid grid-cols-1 p-10 md:grid-cols-2 md:gap-20 md:p-20 lg:gap-60'>
-          <div className='col-span-1 md:pl-40'>
+          <div className='animated-to-right col-span-1 md:pl-40'>
             <div className='whitespace-nowrap text-xs md:text-base'>
               <span className='text-white'>{`<`}</span>
               <span className='text-pink-400'>{`welcome-tag` + ' '}</span>
@@ -37,9 +37,9 @@ export default function Home() {
               <span className='text-yellow-400'>{`'text-green-500'`}</span>
               <span className='text-white'>{`>`}</span>
               <br />
-              <div className='pl-5 text-green-500'>{`Hi all, I am`}</div>
+              <div className='pl-5'>{`Hi all, I am`}</div>
               <span className='text-white'>{`</`}</span>
-              <span className='text-pink-400'>{`welcome-tag` + ' '}</span>
+              <span className='text-pink-400'>{`welcome-tag`}</span>
               <span className='text-white'>{`>`}</span>
             </div>
             <h1 className='text-shadow text-[30px] font-bold text-white sm:text-[60px]'>Quoc Viet</h1>
@@ -48,14 +48,12 @@ export default function Home() {
             </div>
             <div className='hidden py-10 md:block' ></div>
             <div className='flex items-center'>
-              <div>
+              <p className='pl-2 text-xs text-gray-300 text-opacity-70'>
                 {lineItems.map((i, index) => {
-                  return <div className='leading-4' key={index}>
-                    {i}
-                  </div>
+                  return <span>{i} < br /></span>
                 })}
-              </div>
-              <p id='my-p-element' className='translate-y-[-2px] pl-2 text-xs leading-4 text-gray-300 text-opacity-70'>
+              </p>
+              <p id='my-p-element' className='translate-y-[-1px] pl-2 text-xs text-gray-300 text-opacity-70'>
                 On this portfolio page,
                 I would like to introduce to you some
                 of my completed projects as well as
@@ -63,8 +61,9 @@ export default function Home() {
                 You can also see it on my Github page
               </p>
             </div>
+
           </div>
-          <div className="col-span-1 grid w-full place-items-center pt-10 md:pt-0">
+          <div className="animated-to-left col-span-1 grid w-full place-items-center pt-10 md:pt-0">
             <img src="/me.jpg" alt="" className='w-[200px] overflow-hidden rounded-lg object-cover md:w-[300px]' />
           </div>
         </div>

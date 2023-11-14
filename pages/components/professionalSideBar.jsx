@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { TiArrowSortedDown } from 'react-icons/ti'
 import { AiFillFolder, AiFillFolderOpen } from 'react-icons/ai'
+import { BiLogoJavascript } from 'react-icons/bi'
+
 import FileChildSeCond from './fileChildSeCond'
 import ContactsSideBar from './contactsSideBar'
 
@@ -22,14 +24,29 @@ const ProfessionalSideBar = () => {
                     </span>
                 </div>
                 <div className={` w-full overflow-hidden ${!drop ? 'h-0' : 'h-auto border-b-[1px] border-b-gray-700'}`}>
-                    <FileChildSeCond>
-                        <span>experience</span>
+                    <FileChildSeCond file={'experience.js'}>
+                        <span className='mr-3 scale-150 text-xs'>
+                            <BiLogoJavascript />
+                        </span>
+                        <span>experience.js</span>
                     </FileChildSeCond>
-                    <FileChildSeCond>
-                        <span>hard-skills</span>
+                    <FileChildSeCond file={'index.js ./professional-infor'}>
+                        <span className='mr-3 scale-150 text-xs'>
+                            <BiLogoJavascript />
+                        </span>
+                        <span>index.js</span>
                     </FileChildSeCond>
-                    <FileChildSeCond>
-                        <span>soft-skills</span>
+                    <FileChildSeCond file={'hard-skills.js'}>
+                        <span className='mr-3 scale-150 text-xs'>
+                            <BiLogoJavascript />
+                        </span>
+                        <span>hard-skills.js</span>
+                    </FileChildSeCond>
+                    <FileChildSeCond file={'soft-skills.js'}>
+                        <span className='mr-3 scale-150 text-xs'>
+                            <BiLogoJavascript />
+                        </span>
+                        <span>soft-skills.js</span>
                     </FileChildSeCond>
                 </div>
             </div>

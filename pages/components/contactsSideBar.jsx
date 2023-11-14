@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { AiFillFolder, AiFillFolderOpen } from 'react-icons/ai'
 import { TiArrowSortedDown } from 'react-icons/ti'
 import FileChildSeCond from './fileChildSeCond'
+import { BsFiletypeTxt } from 'react-icons/bs'
 
 const ContactsSideBar = () => {
     const [ drop, setDrop ] = useState(false)
@@ -20,8 +21,19 @@ const ContactsSideBar = () => {
                 </span>
             </div>
             <div className={`w-full overflow-hidden ${!drop ? 'h-0' : 'h-auto'}`}>
-                <FileChildSeCond>email</FileChildSeCond>
-                <FileChildSeCond>phone</FileChildSeCond>
+                <FileChildSeCond file={'email.txt'}>
+                    <span
+                        className='mr-3 scale-150 text-xs'>
+                        <BsFiletypeTxt />
+                    </span>
+                    email.txt
+                </FileChildSeCond>
+                <FileChildSeCond file={'phone.txt'}>
+                    <span className='mr-3 scale-150 text-xs'>
+                        <BsFiletypeTxt />
+                    </span>
+                    phone.txt
+                </FileChildSeCond>
             </div>
         </div>
     )
