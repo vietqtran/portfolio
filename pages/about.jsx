@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Layout from './components/layout'
-import AboutSideBar from './components/aboutPage'
-import AboutContent from './components/aboutContent'
+import Layout from '../components/layout'
+import AboutSideBar from '../components/aboutPage'
+import AboutContent from '../components/aboutContent'
 
-const about = () => {
+const About = () => {
     return (
         <Layout>
             <div className='flex h-full w-full flex-1'>
@@ -14,4 +14,4 @@ const about = () => {
     )
 }
 
-export default about
+export default About
