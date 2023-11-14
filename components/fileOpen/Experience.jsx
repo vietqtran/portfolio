@@ -147,7 +147,11 @@ const Experience = () => {
                 </span><span>SQL Server </span>
               </Link>
               databases through management software development projects.
-              <br /> To see some more projects that I have done, you can refer here. Here I introduce in more detail projects using <Link href={'/projects'} className='inline text-blue-400 hover:underline'>
+              <br /> To see some more projects that I have done, you can refer <Link href={'/projects'} className='inline text-white hover:underline'>
+                <span>here</span>
+              </Link>. <Link href={'/projects'} className='inline text-white hover:underline'>
+                <span>Here</span>
+              </Link> I introduce in more detail projects using <Link href={'/projects'} className='inline text-blue-400 hover:underline'>
                 <span className='mx-2 inline-block translate-y-[2px]'>
                   <FaReact />
                 </span><span>ReactJS</span>
