@@ -7,9 +7,6 @@ export default function Document() {
         <title>vietqtran | Portfolio</title>
       </Head>
       <body>
-        <style>
-          @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Code:wght@300;400;500&display=swap');
-        </style>
         <Main />
         <NextScript />
       </body>
