@@ -30,7 +30,7 @@ const ProfessionalSideBar = () => {
                         </span>
                         <span>experience.js</span>
                     </FileChildSeCond>
-                    <FileChildSeCond file={'index.js ./professional-infor'}>
+                    <FileChildSeCond file={'index.js ./pro...'}>
                         <span className='mr-3 scale-150 text-xs'>
                             <BiLogoJavascript />
                         </span>

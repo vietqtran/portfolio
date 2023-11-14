@@ -4,7 +4,7 @@ import SideBarInformation from './infor'
 const AboutSideBar = () => {
 
     return (
-        <div className='flex'>
+        <div className='hidden md:flex'>
             <SideBarInformation />
         </div>
     )

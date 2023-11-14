@@ -125,3 +125,21 @@ body {
     opacity: 1;
   }
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes showFile {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.show-file {
+  animation: showFile .3s ease-out;
+}
