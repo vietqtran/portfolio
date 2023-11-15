@@ -1,5 +1,5 @@
 import React from 'react'
-import SideBarInformation from './infor'
+import SideBarInformation from './Infor'
 
 const AboutSideBar = () => {
 
