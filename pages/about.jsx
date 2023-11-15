@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import Layout from '../components/Layout'
-import AboutSideBar from '../components/aboutPage'
-import AboutContent from '../components/aboutContent'
+import AboutSideBar from '../components/AboutPage'
+import AboutContent from '../components/AboutContent'
 import Head from 'next/head'
 
 const About = () => {
