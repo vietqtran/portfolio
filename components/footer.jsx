@@ -4,27 +4,27 @@ import { FaFacebookF, FaInstagram, FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <div className='w-full h-[44px] border-t-[1px] border-t-gray-700 flex items-center justify-between'>
-            <div className='h-full flex'>
-                <div className='grid place-items-center px-5 h-full border-r-[1px] border-r-gray-700'>find_me_in:</div>
+        <div className='flex h-[44px] w-full items-center justify-between border-t-[1px] border-t-gray-700'>
+            <div className='flex h-full'>
+                <div className='grid h-full place-items-center border-r-[1px] border-r-gray-700 px-5'>find_me_in:</div>
                 <div className='footer-link'>
-                    <Link href={'https://www.facebook.com/khong.phai.quoc.viet/'} className='flex items-center px-5 h-full'>
+                    <Link href={'https://www.facebook.com/khong.phai.quoc.viet/'} className='flex h-full items-center px-5'>
                         <FaFacebookF />
                     </Link>
                 </div>
                 <div className='footer-link'>
-                    <Link href={'https://www.instagram.com/vietq.tran/'} className='flex items-center px-5 h-full'>
+                    <Link href={'https://www.instagram.com/vietq.tran/'} className='flex h-full items-center px-5'>
                         <FaInstagram />
                     </Link>
                 </div>
                 <div className='footer-link'>
-                    <Link href={'https://github.com/vietqtran'} className='flex items-center px-5 h-full'>
+                    <Link href={'https://github.com/vietqtran'} className='flex h-full items-center px-5'>
                         <FaGithub />
                     </Link>
                 </div>
             </div>
-            <div className='hover:bg-white hover:text-white hover:bg-opacity-10 grid place-items-center h-full border-l-[1px] border-l-gray-700'>
-                <Link href={'https://github.com/vietqtran'} className=' items-center px-5 h-full sm:flex hidden'>
+            <div className='grid h-full place-items-center border-l-[1px] border-l-gray-700 hover:bg-white hover:bg-opacity-10 hover:text-white'>
+                <Link href={'https://github.com/vietqtran'} className='hidden h-full items-center px-5 sm:flex'>
                     <span className='mr-3'>@vietqtran</span> <FaGithub />
                 </Link>
             </div>
