@@ -145,3 +145,19 @@ body {
 .show-file {
   animation: showFile .3s ease-out;
 }
+
+@keyframes showToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.show-to-top {
+  animation: showToTop .3s ease-out;
+}

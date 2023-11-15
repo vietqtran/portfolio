@@ -1,9 +1,8 @@
-import Link from 'next/link'
 import React from 'react'
 import Video from './Video'
-import Header from './header'
-import Footer from './footer'
 import { useRouter } from 'next/router'
+import Header from './Header'
+import Footer from './Footer'
 
 const Layout = ({ children }) => {
     const pathname = useRouter().pathname

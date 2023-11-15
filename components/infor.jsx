@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { AiFillCode, AiOutlineUser, AiTwotoneCustomerService } from 'react-icons/ai'
-import ProfessionalSideBar from './professionalSideBar'
-import PersonalSideBar from './personalSideBar'
-import HobbiesSideBar from './hobbiesSideBar'
+import ProfessionalSideBar from './ProfessionalSideBar'
+import PersonalSideBar from './PersonalSideBar'
+import HobbiesSideBar from './HobbiesSideBar'
+
 const SideBarInformation = () => {
 
   const [ tab, setTab ] = useState('professional')

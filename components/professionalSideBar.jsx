@@ -3,8 +3,8 @@ import { TiArrowSortedDown } from 'react-icons/ti'
 import { AiFillFolder, AiFillFolderOpen } from 'react-icons/ai'
 import { BiLogoJavascript } from 'react-icons/bi'
 
-import FileChildSeCond from './fileChildSeCond'
-import ContactsSideBar from './contactsSideBar'
+import FileChildSeCond from './FileChildSeCond'
+import ContactsSideBar from './ContactsSideBar'
 
 const ProfessionalSideBar = () => {
     const [ drop, setDrop ] = useState(false)

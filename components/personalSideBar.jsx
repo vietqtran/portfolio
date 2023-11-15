@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { AiFillFolder, AiFillFolderOpen } from 'react-icons/ai'
-import FileChildSeCond from './fileChildSeCond'
+import FileChildSeCond from './FileChildSeCond'
 import { BiLogoJavascript } from 'react-icons/bi'
 import { TiArrowSortedDown } from 'react-icons/ti'
-import ContactsSideBar from './contactsSideBar'
+import ContactsSideBar from './ContactsSideBar'
 
 const PersonalSideBar = () => {
     const [ drop, setDrop ] = useState(false)

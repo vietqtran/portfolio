@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AiFillFolder, AiFillFolderOpen } from 'react-icons/ai'
 import { TiArrowSortedDown } from 'react-icons/ti'
-import FileChildSeCond from './fileChildSeCond'
+import FileChildSeCond from './FileChildSeCond'
 import { BsFiletypeTxt } from 'react-icons/bs'
 
 const ContactsSideBar = () => {
