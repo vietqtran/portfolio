@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Professional = () => {
+const Email = () => {
     const [ lineItems, setLineItems ] = useState([])
     useEffect(() => {
         const handleResize = () => {
@@ -51,20 +51,9 @@ const Professional = () => {
                     </div>
                     <div className='m-0 p-0'>
                         <p id='my-p-element-code' className='ml-5 block w-full translate-y-[-1px] whitespace-normal pr-5 text-white'>
-                            <span className='text-pink-400'>import </span>
-                            <span className='text-white'>{`{ hardSkills }`}</span>
-                            <span className='text-pink-400'> from </span>
-                            <span className='text-yellow-200'> './hard-skills'</span>; <br />
-                            <span className='text-pink-400'>import </span>
-                            <span className='text-white'>{`{ softSkills }`}</span>
-                            <span className='text-pink-400'> from </span>
-                            <span className='text-yellow-200'> './soft-skills'</span>; <br />
-                            <span className='text-pink-400'>import </span>
-                            <span className='text-white'>{`{ experience }`}</span>
-                            <span className='text-pink-400'> from </span>
-                            <span className='text-yellow-200'> './experience'</span>; <br /> <br />
-                            <span className='text-pink-400'>export </span>
-                            <span className='text-white'>{`{ hardSkills, softSkills, experience }`}</span>
+                            Email for Q&A: tranquocviet1303@gmail.com <br />
+                            Email for work: vietqtran.03@gmail.com <br />
+                            Edu email: viettqhe170367@fpt.edu.vn
                         </p>
                     </div>
                 </div>
@@ -73,4 +62,4 @@ const Professional = () => {
     )
 }
 
-export default Professional
+export default Email

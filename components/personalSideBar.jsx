@@ -24,29 +24,17 @@ const PersonalSideBar = () => {
                     </span>
                 </div>
                 <div className={` w-full overflow-hidden ${!drop ? 'h-0' : 'h-auto border-b-[1px] border-b-gray-700'}`}>
-                    <FileChildSeCond file={'bio.js'}>
+                    <FileChildSeCond file={'work-experience.js'}>
                         <span className='mr-3 scale-150 text-xs'>
                             <BiLogoJavascript />
                         </span>
-                        <span>bio.js</span>
+                        <span>work-experience.js</span>
                     </FileChildSeCond>
                     <FileChildSeCond file={'education.js'}>
                         <span className='mr-3 scale-150 text-xs'>
                             <BiLogoJavascript />
                         </span>
                         <span>education.js</span>
-                    </FileChildSeCond>
-                    <FileChildSeCond file={'index.js ./personal-infor'}>
-                        <span className='mr-3 scale-150 text-xs'>
-                            <BiLogoJavascript />
-                        </span>
-                        <span>index.js</span>
-                    </FileChildSeCond>
-                    <FileChildSeCond file={'interests.js'}>
-                        <span className='mr-3 scale-150 text-xs'>
-                            <BiLogoJavascript />
-                        </span>
-                        <span>interests.js</span>
                     </FileChildSeCond>
                 </div>
             </div>

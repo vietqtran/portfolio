@@ -1,11 +1,16 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import FileButton from './fileOpen/FileButton'
-import Professional from './fileOpen/Professional'
 import HardSkill from './fileOpen/HardSkill'
 import Experience from './fileOpen/Experience'
 import SoftSkill from './fileOpen/SoftSkill'
 import StartUp from './fileOpen/StartUp'
+import WorkExperience from './fileOpen/WorkExperience'
+import Education from './fileOpen/Education'
+import Email from './fileOpen/Email'
+import Phone from './fileOpen/Phone'
+import Music from './fileOpen/Music'
+import Games from './fileOpen/Games'
 
 
 const AboutContent = () => {
@@ -27,7 +32,12 @@ const AboutContent = () => {
             {files.selecting === 'hard-skills.js' && <HardSkill />}
             {files.selecting === 'soft-skills.js' && <SoftSkill />}
             {files.selecting === 'experience.js' && <Experience />}
-            {files.selecting === 'index.js ./pro...' && <Professional />}
+            {files.selecting === 'work-experience.js' && <WorkExperience />}
+            {files.selecting === 'education.js' && <Education />}
+            {files.selecting === 'email.txt' && <Email />}
+            {files.selecting === 'phone.txt' && <Phone />}
+            {files.selecting === 'games.js' && <Games />}
+            {files.selecting === 'music.js' && <Music />}
         </div>
     )
 }

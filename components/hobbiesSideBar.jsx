@@ -24,12 +24,6 @@ const HobbiesSideBar = () => {
                     </span>
                 </div>
                 <div className={` w-full overflow-hidden ${!drop ? 'h-0' : 'h-auto border-b-[1px] border-b-gray-700'}`}>
-                    <FileChildSeCond file={'index.js ./hobbies'}>
-                        <span className='mr-3 scale-150 text-xs'>
-                            <BiLogoJavascript />
-                        </span>
-                        <span>index.js</span>
-                    </FileChildSeCond>
                     <FileChildSeCond file={'games.js'}>
                         <span className='mr-3 scale-150 text-xs'>
                             <BiLogoJavascript />
@@ -41,12 +35,6 @@ const HobbiesSideBar = () => {
                             <BiLogoJavascript />
                         </span>
                         <span>music.js</span>
-                    </FileChildSeCond>
-                    <FileChildSeCond file={'sports.js'}>
-                        <span className='mr-3 scale-150 text-xs'>
-                            <BiLogoJavascript />
-                        </span>
-                        <span>sports.js</span>
                     </FileChildSeCond>
                 </div>
             </div>

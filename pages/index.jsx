@@ -42,10 +42,7 @@ export default function Home() {
               <span className='text-pink-400'>{`welcome-tag`}</span>
               <span className='text-white'>{`>`}</span>
             </div>
-            <h1 className='text-shadow text-[30px] font-bold text-white sm:text-[60px]'>Quoc Viet</h1>
-            <div className='typewriter mb-2'>
-              <h1 className='text-base text-blue-500 md:text-xl'>{`>> Software Engineer`}</h1>
-            </div>
+            <h1 className='text-[30px] font-bold text-white sm:text-[60px]'>Quoc Viet</h1>
             <div className='hidden py-10 md:block' ></div>
             <div className='flex items-center'>
               <p className='pl-2 text-xs text-gray-300 text-opacity-70'>
