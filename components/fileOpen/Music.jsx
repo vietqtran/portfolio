@@ -55,7 +55,7 @@ const Music = () => {
                         <p id='my-p-element-code' className='ml-5 block w-full translate-y-[-1px] whitespace-normal pr-5 text-white'>
                             <Link href={'https://www.youtube.com/watch?v=g3jCAyPai2Y'} className='text-blue-400 hover:text-blue-300 hover:underline'>Baka Mitai</Link>
                             <br />
-                            <Link href={'https://www.youtube.com/watch?v=g3jCAyPai2Y'} className='text-blue-400 hover:text-blue-300 hover:underline'>👉 Listen The Most</Link>
+                            <Link href={'https://www.youtube.com/watch?v=dQw4w9WgXcQ'} className='text-blue-400 hover:text-blue-300 hover:underline'>👉 Listen The Most</Link>
                         </p>
                     </div>
                 </div>
